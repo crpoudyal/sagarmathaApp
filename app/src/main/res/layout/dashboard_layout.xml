@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/teal_200"
+        />
+    <TextView
+        android:id="@+id/dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="User Details"
+        />
+    <TextView
+        android:id="@+id/res_firstname"
+        android:layout_below="@id/dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/res_lastname"
+        android:layout_below="@id/res_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/res_email"
+        android:layout_below="@id/res_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/res_password"
+        android:layout_below="@id/res_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/edt_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_password"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:text="Edit"
+        />
+
+</RelativeLayout>
