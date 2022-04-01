@@ -6,5 +6,10 @@
         android:icon="@android:drawable/ic_menu_delete"
         app:showAsAction="always"
         />
+    <item android:id="@+id/action_notif"
+        android:title="notification"
+        android:icon="@android:drawable/stat_notify_more"
+        app:showAsAction="always"
+        />
 
 </menu>
