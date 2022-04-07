@@ -54,6 +54,11 @@ public class ListExampleActivity extends AppCompatActivity {
                 listItems.add(new ListData("New title","This is description for title"));
                 mAdapter.notifyDataSetChanged();
                 break;
+            case R.id.action_delete:
+//                listItems.remove(0);   // Remove first items
+                listItems.remove(listItems.size()-1);  // Remove last items
+                mAdapter.notifyDataSetChanged();
+                break;
             case android.R.id.home:
                 finish();
                 break;
