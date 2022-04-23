@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/layout/list_item_view.xml" value="0.5" />
         <entry key="app/src/main/res/layout/list_view_layout.xml" value="0.45" />
         <entry key="app/src/main/res/layout/login_layout.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/recycler_example_layout.xml" value="0.45208333333333334" />
         <entry key="app/src/main/res/layout/register_layout.xml" value="0.335" />
         <entry key="app/src/main/res/menu/lv_menu.xml" value="0.1" />
         <entry key="app/src/main/res/menu/menu_text.xml" value="0.35520833333333335" />
