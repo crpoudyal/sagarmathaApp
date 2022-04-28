@@ -134,32 +134,32 @@ public class ListExampleActivity extends AppCompatActivity {
                     }
                 });
     }
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.lv_menu,menu);
-//        return super.onCreateOptionsMenu(menu);
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        switch (item.getItemId()){
-//            case R.id.action_add:
-//                listItems.add(new ListData("New title","This is description for title"));
-//                mAdapter.notifyDataSetChanged();
-//                break;
-//            case R.id.action_delete:
-////                listItems.remove(0);   // Remove first items
-//                listItems.remove(listItems.size()-1);  // Remove last items
-//                mAdapter.notifyDataSetChanged();
-//                break;
-//            case android.R.id.home:
-//                finish();
-//                break;
-//            default:
-//
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.lv_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.action_add:
+                listItems.add(new ListData("New title","This is description for title"));
+                mAdapter.notifyDataSetChanged();
+                break;
+            case R.id.action_delete:
+//                listItems.remove(0);   // Remove first items
+                listItems.remove(listItems.size()-1);  // Remove last items
+                mAdapter.notifyDataSetChanged();
+                break;
+            case android.R.id.home:
+                finish();
+                break;
+            default:
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     public void showCustomDialog(){
         View dialogView = LayoutInflater.from(this)

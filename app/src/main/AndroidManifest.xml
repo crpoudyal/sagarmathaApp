@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sagarmatha">
 
-        <activity android:name=".RecyclerExampleActivity"
+        <activity android:name=".GridExampleActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
