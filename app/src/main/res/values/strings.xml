@@ -8,5 +8,8 @@
         <item>One</item>
         <item>Two</item>
         <item>Three</item>
+
     </array>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
 </resources>
