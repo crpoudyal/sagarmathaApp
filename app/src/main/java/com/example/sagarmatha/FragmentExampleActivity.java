@@ -19,7 +19,7 @@ public class FragmentExampleActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        fragmentOne = new FragmentOne();
+        fragmentOne = new FragmentOne("This is frag");
         fragmentTwo = new FragmentTwo();
 
         getSupportFragmentManager().beginTransaction().add(R.id.container,fragmentOne,"ONE").commitNowAllowingStateLoss();
