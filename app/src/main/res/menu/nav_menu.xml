@@ -12,6 +12,13 @@
         android:title="View"
         android:icon="@android:drawable/ic_menu_view"
         />
+    <item android:id="@+id/action_dialog"
+        android:title="Show Dialog"
+        android:icon="@android:drawable/ic_menu_view"
+        />
+    <item android:id="@+id/action_db"
+        android:title="Database Example"
+        />
     <item android:id="@+id/logout"
         android:icon="@drawable/ic_logout"
         android:title="Logout"

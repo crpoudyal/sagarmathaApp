@@ -44,19 +44,31 @@ public class NavigationActivity extends AppCompatActivity {
            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                switch (item.getItemId()){
                    case R.id.action_add:
-                       getSupportFragmentManager().beginTransaction().replace(R.id.container,new FragmentOne("This is add action"),
+                       getSupportFragmentManager().beginTransaction().replace(R.id.container,
+                               new FragmentOne("This is add action"),
                                "Fragment one").commitAllowingStateLoss();
                        break;
                    case R.id.action_delete:
-                       getSupportFragmentManager().beginTransaction().replace(R.id.container,new FragmentOne("This is delete action"),
+                       getSupportFragmentManager().beginTransaction().replace(R.id.container,
+                               new FragmentOne("This is delete action"),
                                "Fragment one").commitAllowingStateLoss();
                        break;
                    case R.id.action_view:
-                       getSupportFragmentManager().beginTransaction().replace(R.id.container,new FragmentOne("This is view action"),
+                       getSupportFragmentManager().beginTransaction().replace(R.id.container,
+                               new FragmentOne("This is view action"),
                                "Fragment one").commitAllowingStateLoss();
                        break;
+                   case R.id.action_dialog:
+                       DialogExample dialog = DialogExample.init("This is Title");
+                       dialog.show(getSupportFragmentManager(),"Dialog");
+                       break;
+                   case R.id.action_db:
+                       getSupportFragmentManager().beginTransaction().replace(R.id.container,
+                               new DbFragment(),"DB Fragment").commitAllowingStateLoss();
+                       break;
                    case R.id.logout:
-                       getSupportFragmentManager().beginTransaction().replace(R.id.container,new FragmentOne("This is Logout action"),
+                       getSupportFragmentManager().beginTransaction().replace(R.id.container,
+                               new FragmentOne("This is Logout action"),
                                "Fragment one").commitAllowingStateLoss();
                        break;
                }
